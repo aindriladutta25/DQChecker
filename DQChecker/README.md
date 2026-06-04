@@ -1,6 +1,6 @@
 # Data Quality Checker
 
-DataLint is a reusable Data Quality Checker designed to help you ensure the integrity and quality of your datasets. This project provides a set of tools to check for null values, duplicates, outliers, and schema issues in your data.
+DQChecker is a reusable Data Quality Checker designed to help you ensure the integrity and quality of your datasets. This project provides a set of tools to check for null values, duplicates, outliers, and schema issues in your data.
 
 ## Features
 
@@ -42,7 +42,7 @@ The Flask web app in `app.py` uploads CSV files to a temporary file and then rea
 To run the web app:
 
 ```powershell
-python DataLint/app.py
+python DQChecker/app.py
 ```
 
 Then open `http://localhost:5000` in your browser.

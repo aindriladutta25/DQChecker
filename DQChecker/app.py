@@ -1,5 +1,5 @@
 """
-app.py — DataLint Web App
+app.py — DQChecker Web App
 Author: Aindrila Dutta
 ------------------------------------------------------
 Run:
@@ -472,5 +472,5 @@ def analyse():
 
 
 if __name__ == "__main__":
-    print("\n  DataLint is running → http://localhost:5000\n")
+    print("\n  DQChecker is running → http://localhost:5000\n")
     app.run(debug=True, port=5000)
