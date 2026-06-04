@@ -324,7 +324,7 @@ The web app is for anyone who wants to check data quality **without writing any 
 
 ```bash
 pip install -r requirements.txt
-python app.py
+python -m src.app
 ```
 
 Open [http://localhost:5000] in your browser.
@@ -378,8 +378,9 @@ The score is a weighted sum across four dimensions:
 ```
 DQChecker/
 ├── dq_checker.py       ← Standalone library (copy this into any project)
-├── app.py              ← Flask web app
 ├── requirements.txt    ← Dependencies
+├── src/
+│   └── app.py          ← Flask web app
 └── README.md
 ```
 

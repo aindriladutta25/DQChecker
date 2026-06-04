@@ -4,7 +4,7 @@ Author: Aindrila Dutta
 ------------------------------------------------------
 Run:
     pip install flask pandas numpy
-    python app.py
+    python -m src.app
 Then open http://localhost:5000
 """
 
@@ -15,7 +15,11 @@ import tempfile
 
 import pandas as pd
 from flask import Flask, render_template_string, request, jsonify
-from src.dq_checker import run_full_report
+
+try:
+    from .dq_checker import run_full_report
+except ImportError:
+    from src.dq_checker import run_full_report
 
 app = Flask(__name__)
 app.config["MAX_CONTENT_LENGTH"] = 10 * 1024 * 1024  # 10 MB upload limit
