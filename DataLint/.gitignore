@@ -1,0 +1,41 @@
+# Python caches and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Pytest cache
+.pytest_cache/
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and runtime files
+*.log
+*.sqlite3
+*.pid
+
+# Environment files
+.env
+
+# Packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Temporary files
+*.tmp
+*.temp
+*~
